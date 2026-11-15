@@ -1,0 +1,17 @@
+# Supplied pack: never commit (synthetic, but treated as real member data)
+/pack/
+/data/
+/mock_services/
+/kb/
+/tools/
+/eval/
+BRIEF.md
+# runtime
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+traces/
+*.log
+reps.json
+.env

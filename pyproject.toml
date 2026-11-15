@@ -1,0 +1,18 @@
+[project]
+name = "msagent"
+version = "0.1.0"
+description = "Governed multi-tenant member-services agent (vertical slice)"
+requires-python = ">=3.10"
+dependencies = []          # runtime is standard library only
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+msagent = "msagent.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["msagent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
